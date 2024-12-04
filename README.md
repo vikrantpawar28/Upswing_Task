@@ -1,27 +1,19 @@
-# UpswingTask
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Create json file to store data
+1.Create db.json file in src directory 
+2.install json-server using CLI (npm install json-server)
+3.Start the json server using CLI (npx json-server --watch db.json --port 3000)
+4.create products array in  db.json file
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Features
+ **Real-Time Updates**: Tasks update dynamically without reloading the page.
+ **Responsive Design**: Optimized for both desktop and mobile devices using Angular Material.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Technology Stack
+**Frontend**: Angular 16, Angular Material
+ **Database**:  JSON Server (for storing the data)
