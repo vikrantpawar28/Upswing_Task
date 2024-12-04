@@ -4,7 +4,7 @@
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
 ## Create json file to store data
-1.Create db.json file in src directory 
+1.Create db.json file in root directory 
 2.install json-server using CLI (npm install json-server)
 3.Start the json server using CLI (npx json-server --watch db.json --port 3000)
 4.create products array in  db.json file

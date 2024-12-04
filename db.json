@@ -1,0 +1,10 @@
+{
+  "products": [
+    {
+      "name": "Sneakers",
+      "price": "5000",
+      "category": "Footwear",
+      "id": "8387"
+    }
+  ]
+}

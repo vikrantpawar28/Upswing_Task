@@ -1,0 +1,31 @@
+<div class="wrapper">
+    <div>
+      <h1>Add New</h1>
+      <button mat-flat-button color="primary"  class="backbtn" (click)="backToList()">
+        <mat-icon>arrow_back</mat-icon>
+      </button>
+    </div>
+      <form [formGroup]="addnewForm" (ngSubmit)="onSubmit()">
+        <mat-form-field appearance="outline">
+          <mat-label>Name </mat-label>
+          <input class="common-input" matInput formControlName="name"/>
+          <mat-error class="error-message" *ngIf="this.addnewForm.get('name')">Name is required </mat-error>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+          <mat-label>Price</mat-label>
+          <input class="common-input" matInput formControlName="price"/>
+          <mat-error class="error-message" *ngIf="this.addnewForm.get('price')">Price is required</mat-error>
+        </mat-form-field>
+    
+        <mat-form-field appearance="outline">
+          <mat-label>Category</mat-label>
+          <input matInput formControlName="category"/>
+          <mat-error class="error-message" *ngIf="this.addnewForm.get('category')">Category is required
+           </mat-error>
+        </mat-form-field>
+           
+        
+        <button class="btn" mat-raised-button color="primary"  type="submit">Submit</button>
+        <button class="btn" mat-raised-button   type="reset">cancel</button>
+      </form>
+    </div>
